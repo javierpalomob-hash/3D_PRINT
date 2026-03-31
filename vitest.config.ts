@@ -10,6 +10,7 @@ export default defineConfig({
     setupFiles: ['./src/__tests__/setup.ts'],
     include: ['src/**/*.{test,spec}.{ts,tsx}'],
     exclude: ['node_modules', 'superpowers'],
+    css: false,
   },
   resolve: {
     alias: {
