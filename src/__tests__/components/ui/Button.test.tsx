@@ -20,7 +20,7 @@ describe('Button', () => {
 
   it('applies outline variant', () => {
     render(<Button variant="outline">Ver más</Button>)
-    expect(screen.getByRole('button')).toHaveClass('border')
+    expect(screen.getByRole('button')).toHaveClass('border-[#BFDBFE]')
   })
 
   it('passes through html button props', () => {
