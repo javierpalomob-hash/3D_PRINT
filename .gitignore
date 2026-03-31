@@ -37,3 +37,13 @@ Thumbs.db
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Superpowers brainstorm sessions
+.superpowers/
+
+# Claude Code local settings
+.claude/
+
+# Cloned skill repos (not part of the project)
+superpowers/
+gsap-skills/
