@@ -42,4 +42,9 @@ describe('presupuestoSchema', () => {
     const result = presupuestoSchema.safeParse({ ...valid, cantidad: 0 })
     expect(result.success).toBe(false)
   })
+
+  it('rejects sinDetalles:false with material but no cantidad', () => {
+    const result = presupuestoSchema.safeParse({ ...valid, cantidad: undefined })
+    expect(result.success).toBe(false)
+  })
 })

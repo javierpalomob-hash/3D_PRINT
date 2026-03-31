@@ -13,18 +13,23 @@ export const presupuestoSchema = z
     modalidad: z.enum(['recogida', 'envio']),
     fechaDeseada: z.string().optional(),
   })
-  .refine(
-    (data) => {
-      // If sinDetalles is false, material and cantidad are required
-      if (!data.sinDetalles) {
-        return data.material !== undefined && data.cantidad !== undefined
+  .superRefine((data, ctx) => {
+    if (!data.sinDetalles) {
+      if (data.material === undefined) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message: 'El material es obligatorio si conoces los detalles',
+          path: ['material'],
+        })
       }
-      return true
-    },
-    {
-      message: 'Material y cantidad son obligatorios si conoces los detalles',
-      path: ['material'],
+      if (data.cantidad === undefined) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message: 'La cantidad es obligatoria si conoces los detalles',
+          path: ['cantidad'],
+        })
+      }
     }
-  )
+  })
 
 export type PresupuestoFormData = z.infer<typeof presupuestoSchema>
