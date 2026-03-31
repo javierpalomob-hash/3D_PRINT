@@ -54,14 +54,16 @@ export function GaleriaPreviewSection() {
               />
             </div>
           ))}
-          <Link href="/galeria" className="galeria-item">
-            <div className="aspect-square rounded-lg bg-[#EFF6FF] border border-[#BFDBFE] flex items-center justify-center hover:bg-[#dbeafe] transition-colors">
-              <div className="text-center">
-                <div className="text-sm font-bold text-[#2563EB]">Ver todo →</div>
-                <div className="text-xs text-muted mt-1">Galería completa</div>
+          <div className="galeria-item">
+            <Link href="/galeria">
+              <div className="aspect-square rounded-lg bg-[#EFF6FF] border border-[#BFDBFE] flex items-center justify-center hover:bg-[#dbeafe] transition-colors">
+                <div className="text-center">
+                  <div className="text-sm font-bold text-[#2563EB]">Ver todo →</div>
+                  <div className="text-xs text-muted mt-1">Galería completa</div>
+                </div>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
