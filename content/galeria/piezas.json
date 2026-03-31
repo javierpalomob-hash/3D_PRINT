@@ -1,0 +1,8 @@
+[
+  { "id": "g1", "titulo": "Soporte bici", "categoria": "hogar", "material": "petg", "imagen": "https://images.unsplash.com/photo-1611117775350-ac3950990985?w=600&q=80", "destacado": true },
+  { "id": "g2", "titulo": "Figura decorativa", "categoria": "decoracion", "material": "pla", "imagen": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", "destacado": true },
+  { "id": "g3", "titulo": "Prototipo industrial", "categoria": "prototipos", "material": "petg", "imagen": "https://images.unsplash.com/photo-1631544625787-ccb1a3ef22e2?w=600&q=80", "destacado": false },
+  { "id": "g4", "titulo": "Pieza técnica", "categoria": "industrial", "material": "asa", "imagen": "https://images.unsplash.com/photo-1631544824938-a6a1a4bf3d09?w=600&q=80", "destacado": false },
+  { "id": "g5", "titulo": "Miniatura coleccionable", "categoria": "coleccionables", "material": "pla", "imagen": "https://images.unsplash.com/photo-1644425934863-b39b42803af8?w=600&q=80", "destacado": false },
+  { "id": "g6", "titulo": "Organizador hogar", "categoria": "hogar", "material": "pla", "imagen": "https://images.unsplash.com/photo-1611117775350-ac3950990985?w=600&q=80", "destacado": false }
+]
