@@ -4,6 +4,7 @@ import './globals.css'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import { WhatsAppButton } from '@/components/layout/WhatsAppButton'
+import { JsonLdLocalBusiness } from '@/components/JsonLd'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -41,6 +42,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={inter.variable}>
       <body>
+        <JsonLdLocalBusiness />
         <Navbar />
         <main>{children}</main>
         <Footer />
