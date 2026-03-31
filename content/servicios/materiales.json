@@ -1,0 +1,42 @@
+[
+  {
+    "id": "pla",
+    "nombre": "PLA",
+    "descripcion": "El material más popular. Fácil de imprimir, acabado liso y gran variedad de colores. Ideal para decoración, prototipos visuales y piezas sin requisitos mecánicos exigentes.",
+    "usos": ["Decoración", "Prototipos", "Figuras", "Coleccionables"],
+    "resistenciaTermica": "~60°C",
+    "resistenciaMecanica": "Media",
+    "precio": "económico",
+    "disponible": true
+  },
+  {
+    "id": "petg",
+    "nombre": "PETG",
+    "descripcion": "Combina la facilidad del PLA con mayor resistencia. Buena resistencia química y algo más flexible. Perfecto para piezas funcionales.",
+    "usos": ["Piezas funcionales", "Contenedores", "Outdoor", "Industrial ligero"],
+    "resistenciaTermica": "~80°C",
+    "resistenciaMecanica": "Alta",
+    "precio": "medio",
+    "disponible": true
+  },
+  {
+    "id": "tpu",
+    "nombre": "TPU",
+    "descripcion": "Material flexible y elástico. Resiste impactos y es difícil de romper. Ideal para fundas, juntas y piezas que necesiten flexibilidad.",
+    "usos": ["Fundas", "Juntas", "Calzado", "Piezas flexibles"],
+    "resistenciaTermica": "~80°C",
+    "resistenciaMecanica": "Muy alta (impacto)",
+    "precio": "medio-alto",
+    "disponible": true
+  },
+  {
+    "id": "asa",
+    "nombre": "ASA",
+    "descripcion": "Similar al ABS pero con mejor resistencia UV. Perfecto para piezas de exterior que deban aguantar el sol y la intemperie.",
+    "usos": ["Exterior", "Automoción", "Soportes outdoor"],
+    "resistenciaTermica": "~100°C",
+    "resistenciaMecanica": "Alta",
+    "precio": "alto",
+    "disponible": false
+  }
+]

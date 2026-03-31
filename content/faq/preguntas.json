@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Cuánto tarda en estar lista mi pieza?",
+    "respuesta": "Depende del tamaño y la complejidad. Piezas pequeñas suelen estar listas en 24-48h. Pedidos grandes o con detalles finos pueden tardar 3-5 días laborables. Siempre te confirmamos el plazo antes de empezar."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Qué formatos de archivo aceptáis?",
+    "respuesta": "Aceptamos archivos STL, OBJ y 3MF. Si tienes el diseño en otro formato (SolidWorks, Fusion 360, Blender...) podemos ayudarte a exportarlo correctamente."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Podéis diseñar la pieza desde cero?",
+    "respuesta": "De momento nos centramos en imprimir archivos ya diseñados. Si no tienes el archivo, podemos recomendarte diseñadores de confianza o buscar el modelo en librerías gratuitas como Thingiverse o Printables."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cómo recojo mi pedido?",
+    "respuesta": "Puedes recogerlo en persona en Badalona sin coste adicional. Coordinamos la recogida por WhatsApp o email una vez lista la pieza."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Hacéis envíos a domicilio?",
+    "respuesta": "Sí, enviamos a toda la Península. El coste de envío depende del peso y las dimensiones del paquete. Te lo informamos siempre antes de confirmar el pedido."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Cómo se calcula el precio?",
+    "respuesta": "El precio depende del material utilizado, el tiempo de impresión (que depende del tamaño y densidad del relleno) y los acabados opcionales. Te enviamos presupuesto sin compromiso en menos de 24h."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Tenéis descuentos para pedidos grandes?",
+    "respuesta": "Sí, para pedidos recurrentes o en volumen aplicamos descuentos especiales. Contáctanos y lo hablamos."
+  }
+]
