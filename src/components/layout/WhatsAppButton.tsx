@@ -25,13 +25,13 @@ export function WhatsAppButton() {
       ease: 'back.out(1.7)',
     })
 
-    // Subtle pulse every 4s
+    // Subtle pulse every ~4s (infinite loop)
     gsap.to(btn, {
       scale: 1.08,
       duration: 0.3,
       ease: 'power1.inOut',
       yoyo: true,
-      repeat: 1,
+      repeat: -1,
       repeatDelay: 3.7,
       delay: 2.5,
     })

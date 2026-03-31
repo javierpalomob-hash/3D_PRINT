@@ -1,7 +1,12 @@
 import Link from 'next/link'
 import { buildWhatsAppUrl } from '@/lib/whatsapp'
 
-const serviciosLinks = ['Impresión FDM', 'Materiales', 'Acabados', 'Presupuesto']
+const serviciosLinks = [
+  { label: 'Impresión FDM', href: '/servicios' },
+  { label: 'Materiales', href: '/servicios#materiales' },
+  { label: 'Acabados', href: '/servicios#acabados' },
+  { label: 'Presupuesto', href: '/presupuesto' },
+]
 const empresaLinks = [
   { label: 'Sobre nosotros', href: '/about' },
   { label: 'Galería', href: '/galeria' },
@@ -33,7 +38,11 @@ export function Footer() {
             <div className="label-text mb-4">Servicios</div>
             <ul className="space-y-2">
               {serviciosLinks.map((s) => (
-                <li key={s} className="text-xs text-muted">{s}</li>
+                <li key={s.href}>
+                  <Link href={s.href} className="text-xs text-muted hover:text-white transition-colors">
+                    {s.label}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
