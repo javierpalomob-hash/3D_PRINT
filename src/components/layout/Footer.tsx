@@ -83,7 +83,7 @@ export function Footer() {
         <div className="border-t border-[#1E3A5F] pt-6 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-muted">
           <div className="flex gap-4">
             <span>© {year} Print3D Badalona</span>
-            <Link href="/legal" className="hover:text-white transition-colors">Aviso legal</Link>
+            <Link href="/aviso-legal" className="hover:text-white transition-colors">Aviso legal</Link>
             <Link href="/privacidad" className="hover:text-white transition-colors">Privacidad</Link>
             <Link href="/cookies" className="hover:text-white transition-colors">Cookies</Link>
           </div>
