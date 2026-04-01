@@ -8,11 +8,11 @@ import Link from 'next/link'
 
 // Stock images from Unsplash (free, 3D printing related)
 const preview = [
-  { src: 'https://images.unsplash.com/photo-1611117775350-ac3950990985?w=400&q=80', alt: 'Pieza impresa en 3D' },
-  { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', alt: 'Impresora 3D en proceso' },
+  { src: 'https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=400&q=80', alt: 'Impresora 3D en proceso' },
   { src: 'https://images.unsplash.com/photo-1631544625787-ccb1a3ef22e2?w=400&q=80', alt: 'Detalle de pieza PLA' },
   { src: 'https://images.unsplash.com/photo-1631544824938-a6a1a4bf3d09?w=400&q=80', alt: 'Prototipo funcional' },
-  { src: 'https://images.unsplash.com/photo-1644425934863-b39b42803af8?w=400&q=80', alt: 'Pieza decorativa impresa' },
+  { src: 'https://images.unsplash.com/photo-1644425934863-b39b42803af8?w=400&q=80', alt: 'Miniatura coleccionable' },
+  { src: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=400&q=80', alt: 'Piezas técnicas impresas' },
 ]
 
 export function GaleriaPreviewSection() {

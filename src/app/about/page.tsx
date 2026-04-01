@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const equipos = [
   { nombre: 'Bambu Lab X1C', material: 'PLA, PETG, TPU, ASA', velocidad: 'Alta' },
-  { nombre: 'Prusa MK4', material: 'PLA, PETG, TPU', velocidad: 'Estándar' },
+  { nombre: 'Bambu Lab A1', material: 'PLA, PETG, TPU', velocidad: 'Alta' },
 ]
 
 export default function AboutPage() {

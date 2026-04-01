@@ -34,12 +34,12 @@ export default function ContactoPage() {
             </Card>
           </a>
 
-          <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_CONTACT ?? 'hola@print3dbadalona.com'}`}>
+          <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_CONTACT ?? 'info@print3dbadalona.com'}`}>
             <Card className="p-6 hover:border-[#2563EB] transition-colors group">
               <div className="text-3xl mb-3">✉️</div>
               <h3 className="text-base font-black text-navy mb-1 group-hover:text-[#2563EB]">Email</h3>
               <p className="text-sm font-medium text-muted">
-                {process.env.NEXT_PUBLIC_EMAIL_CONTACT ?? 'hola@print3dbadalona.com'}
+                {process.env.NEXT_PUBLIC_EMAIL_CONTACT ?? 'info@print3dbadalona.com'}
               </p>
             </Card>
           </a>
