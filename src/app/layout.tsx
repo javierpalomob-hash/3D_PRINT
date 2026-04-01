@@ -15,6 +15,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://print3dbadalona.com'),
   title: {
     default: 'Print3D Badalona — Impresión 3D local en Badalona',
     template: '%s | Print3D Badalona',
