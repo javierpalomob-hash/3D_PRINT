@@ -16,7 +16,6 @@ const MATERIALES = [
 type CantidadOpcion = '1' | '2-5' | 'mas5'
 
 export function PresupuestoForm() {
-  const [sinDetalles, setSinDetalles] = useState(false)
   const [cantidadOpcion, setCantidadOpcion] = useState<CantidadOpcion>('1')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
@@ -43,11 +42,19 @@ export function PresupuestoForm() {
   })
 
   const modalidad = watch('modalidad')
+  const sinDetalles = watch('sinDetalles') ?? false
 
   function handleSinDetallesToggle() {
     const next = !sinDetalles
-    setSinDetalles(next)
     setValue('sinDetalles', next)
+    if (next) {
+      // Clear material so a stale "" value doesn't fail enum validation
+      // while the field is hidden
+      setValue('material', undefined)
+      setValue('cantidadExacta', undefined)
+    } else {
+      setValue('cantidad', 1)
+    }
   }
 
   function handleCantidadOpcion(op: CantidadOpcion) {
