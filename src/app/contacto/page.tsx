@@ -59,8 +59,17 @@ export default function ContactoPage() {
           </Card>
         </div>
 
-        <div className="w-full h-64 bg-surface rounded-xl border border-[#E5EAF0] flex items-center justify-center">
-          <p className="text-sm text-muted">📍 Mapa — Badalona, Barcelona</p>
+        <div className="w-full overflow-hidden rounded-xl border border-[#E5EAF0]">
+          <iframe
+            src="https://maps.google.com/maps?q=Badalona,+Barcelona,+Spain&z=14&output=embed"
+            width="100%"
+            height="320"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Mapa de Badalona, Barcelona"
+          />
         </div>
         <p className="text-xs text-muted mt-2">
           * Dirección exacta se confirma al solicitar recogida.
