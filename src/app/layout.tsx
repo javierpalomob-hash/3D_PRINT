@@ -6,6 +6,7 @@ import { Footer } from '@/components/layout/Footer'
 import { WhatsAppButton } from '@/components/layout/WhatsAppButton'
 import { CookieBanner } from '@/components/layout/CookieBanner'
 import { JsonLdLocalBusiness } from '@/components/JsonLd'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -62,6 +63,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton />
         <CookieBanner />
+        <GoogleAnalytics gaId="G-8TMK1HFLCE" />
       </body>
     </html>
   )
