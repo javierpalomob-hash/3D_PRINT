@@ -6,13 +6,12 @@ import { gsap } from '@/lib/gsap'
 import Image from 'next/image'
 import Link from 'next/link'
 
-// Stock images from Unsplash (free, 3D printing related)
 const preview = [
-  { src: 'https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=400&q=80', alt: 'Impresora 3D en proceso' },
-  { src: 'https://images.unsplash.com/photo-1631544625787-ccb1a3ef22e2?w=400&q=80', alt: 'Detalle de pieza PLA' },
-  { src: 'https://images.unsplash.com/photo-1631544824938-a6a1a4bf3d09?w=400&q=80', alt: 'Prototipo funcional' },
-  { src: 'https://images.unsplash.com/photo-1644425934863-b39b42803af8?w=400&q=80', alt: 'Miniatura coleccionable' },
-  { src: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=400&q=80', alt: 'Piezas técnicas impresas' },
+  { src: '/galeria/hogar-1.jpg',          alt: 'Soporte bici pared impreso en 3D' },
+  { src: '/galeria/industrial-2.jpg',     alt: 'Engranajes mecánicos impresos en 3D' },
+  { src: '/galeria/prototipos-3.jpg',     alt: 'Maqueta arquitectónica impresa en 3D' },
+  { src: '/galeria/coleccionables-1.jpg', alt: 'Figura guerrero coleccionable impresa en 3D' },
+  { src: '/galeria/decoracion-3.jpg',     alt: 'Lámpara geométrica impresa en 3D' },
 ]
 
 export function GaleriaPreviewSection() {
