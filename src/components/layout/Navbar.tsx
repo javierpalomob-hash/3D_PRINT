@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
 import { buildWhatsAppUrl } from '@/lib/whatsapp'
@@ -22,8 +23,8 @@ export function Navbar() {
     <header className="sticky top-0 z-50 bg-white border-b border-[#F1F5F9]">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" title="Print3D Badalona — Inicio" className="text-[15px] font-black text-navy tracking-tight">
-          P3D<span className="text-[#2563EB]">.</span>
+        <Link href="/" title="Print3D Badalona — Inicio">
+          <Image src="/logo.png" alt="Print3D Badalona" width={140} height={40} className="h-9 w-auto" priority />
         </Link>
 
         {/* Links — hidden on mobile */}

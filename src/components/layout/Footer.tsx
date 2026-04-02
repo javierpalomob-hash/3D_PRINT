@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { buildWhatsAppUrl } from '@/lib/whatsapp'
 
 const serviciosLinks = [
@@ -25,8 +26,8 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
           {/* Brand */}
           <div>
-            <div className="text-lg font-black tracking-tight mb-3">
-              P3D<span className="text-[#2563EB]">.</span>
+            <div className="mb-3">
+              <Image src="/logo.png" alt="Print3D Badalona" width={120} height={34} className="h-8 w-auto brightness-0 invert" />
             </div>
             <p className="text-xs text-muted leading-relaxed">
               Impresión 3D local en<br />Badalona, Barcelona.
