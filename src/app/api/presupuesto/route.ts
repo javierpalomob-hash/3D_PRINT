@@ -59,7 +59,7 @@ export async function POST(req: NextRequest) {
 
     // Confirmation email to client
     await resend.emails.send({
-      from: `Print3D Badalona <hola@${new URL(siteUrl).hostname}>`,
+      from: `Print3D Badalona <info@${new URL(siteUrl).hostname}>`,
       to: data.email,
       subject: '¡Hemos recibido tu presupuesto! — Print3D Badalona',
       html: `
