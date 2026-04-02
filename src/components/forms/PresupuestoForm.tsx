@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef } from 'react'
+import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { presupuestoSchema, type PresupuestoFormData } from '@/lib/schemas'
@@ -16,6 +17,7 @@ const MATERIALES = [
 type CantidadOpcion = '1' | '2-5' | 'mas5'
 
 export function PresupuestoForm() {
+  const router = useRouter()
   const [cantidadOpcion, setCantidadOpcion] = useState<CantidadOpcion>('1')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
@@ -85,7 +87,7 @@ export function PresupuestoForm() {
       const json = await res.json()
 
       if (res.ok) {
-        setSubmitResult({ ok: true, message: json.message, waUrl: json.waUrl })
+        router.push('/presupuesto/gracias')
       } else {
         setSubmitResult({ ok: false, message: json.error ?? 'Error al enviar' })
       }
