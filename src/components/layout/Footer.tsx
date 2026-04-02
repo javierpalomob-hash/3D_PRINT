@@ -11,6 +11,7 @@ const serviciosLinks = [
 const empresaLinks = [
   { label: 'Sobre nosotros', href: '/about', title: 'Conoce el equipo de Print3D Badalona' },
   { label: 'Galería', href: '/galeria', title: 'Ver galería de trabajos impresos en 3D' },
+  { label: 'Blog', href: '/blog', title: 'Blog sobre impresión 3D' },
   { label: 'Contacto', href: '/contacto', title: 'Contactar con Print3D Badalona' },
 ]
 
