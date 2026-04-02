@@ -24,7 +24,7 @@ export function Navbar() {
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" title="Print3D Badalona — Inicio">
-          <Image src="/logo.png" alt="Print3D Badalona" width={140} height={40} className="h-9 w-auto" priority />
+          <Image src="/logo.png" alt="Print3D Badalona" width={200} height={56} className="h-10 w-auto" priority />
         </Link>
 
         {/* Links — hidden on mobile */}
