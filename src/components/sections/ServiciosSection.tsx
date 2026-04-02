@@ -42,7 +42,7 @@ export function ServiciosSection() {
               <p className="text-xs font-medium text-muted leading-relaxed">{s.desc}</p>
             </Card>
           ))}
-          <Link href="/servicios">
+          <Link href="/servicios" title="Ver todos los servicios de impresión 3D">
             <Card className="servicio-card p-5 border-[#BFDBFE] bg-[#EFF6FF] h-full flex flex-col justify-center hover:bg-[#dbeafe] transition-colors">
               <p className="text-sm font-bold text-[#2563EB]">Ver todos →</p>
               <p className="text-xs text-muted mt-1">Materiales, precios y más</p>

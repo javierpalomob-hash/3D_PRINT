@@ -381,7 +381,7 @@ export function PresupuestoForm() {
 
         <p className="text-[10px] text-muted text-center leading-relaxed">
           Al enviar aceptas nuestra{' '}
-          <a href="/privacidad" className="text-[#2563EB] hover:underline">
+          <a href="/privacidad" title="Ver política de privacidad de Print3D Badalona" className="text-[#2563EB] hover:underline">
             Política de privacidad
           </a>
           . Nunca compartimos tus datos con terceros.

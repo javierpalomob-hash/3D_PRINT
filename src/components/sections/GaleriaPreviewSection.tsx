@@ -55,7 +55,7 @@ export function GaleriaPreviewSection() {
             </div>
           ))}
           <div className="galeria-item">
-            <Link href="/galeria">
+            <Link href="/galeria" title="Ver galería completa de trabajos impresos en 3D">
               <div className="aspect-square rounded-lg bg-[#EFF6FF] border border-[#BFDBFE] flex items-center justify-center hover:bg-[#dbeafe] transition-colors">
                 <div className="text-center">
                   <div className="text-sm font-bold text-[#2563EB]">Ver todo →</div>

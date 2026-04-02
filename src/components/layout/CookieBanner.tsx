@@ -80,7 +80,7 @@ export function CookieBanner() {
               personalizar
             </span>{' '}
             tu elección.{' '}
-            <Link href="/cookies" className="text-[#2563EB] hover:underline">
+            <Link href="/cookies" title="Ver política de cookies de Print3D Badalona" className="text-[#2563EB] hover:underline">
               Más info
             </Link>
           </div>

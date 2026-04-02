@@ -6,10 +6,10 @@ import { cn } from '@/lib/utils'
 import { buildWhatsAppUrl } from '@/lib/whatsapp'
 
 const navLinks = [
-  { href: '/servicios', label: 'Servicios' },
-  { href: '/galeria', label: 'Galería' },
-  { href: '/about', label: 'Sobre nosotros' },
-  { href: '/contacto', label: 'Contacto' },
+  { href: '/servicios', label: 'Servicios', title: 'Ver servicios de impresión 3D en Badalona' },
+  { href: '/galeria', label: 'Galería', title: 'Ver galería de trabajos impresos en 3D' },
+  { href: '/about', label: 'Sobre nosotros', title: 'Conoce el equipo de Print3D Badalona' },
+  { href: '/contacto', label: 'Contacto', title: 'Contactar con Print3D Badalona' },
 ]
 
 export function Navbar() {
@@ -22,7 +22,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 bg-white border-b border-[#F1F5F9]">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-[15px] font-black text-navy tracking-tight">
+        <Link href="/" title="Print3D Badalona — Inicio" className="text-[15px] font-black text-navy tracking-tight">
           P3D<span className="text-[#2563EB]">.</span>
         </Link>
 
@@ -32,6 +32,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
+              title={link.title}
               className={cn(
                 'text-sm font-medium transition-colors',
                 pathname === link.href
@@ -46,6 +47,7 @@ export function Navbar() {
             href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
+            title="Escribir a Print3D Badalona por WhatsApp"
             className="bg-[#25D366] text-white text-sm font-bold px-4 py-2 rounded-[5px] hover:bg-[#1fba58] transition-colors"
           >
             💬 WhatsApp
@@ -57,6 +59,7 @@ export function Navbar() {
           href={waUrl}
           target="_blank"
           rel="noopener noreferrer"
+          title="Escribir a Print3D Badalona por WhatsApp"
           className="md:hidden bg-[#25D366] text-white text-sm font-bold px-3 py-2 rounded-[5px]"
         >
           💬
