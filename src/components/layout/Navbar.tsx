@@ -9,6 +9,7 @@ import { buildWhatsAppUrl } from '@/lib/whatsapp'
 const navLinks = [
   { href: '/servicios', label: 'Servicios', title: 'Ver servicios de impresión 3D en Badalona' },
   { href: '/galeria', label: 'Galería', title: 'Ver galería de trabajos impresos en 3D' },
+  { href: '/blog', label: 'Blog', title: 'Blog sobre impresión 3D' },
   { href: '/about', label: 'Sobre nosotros', title: 'Conoce el equipo de Print3D Badalona' },
   { href: '/contacto', label: 'Contacto', title: 'Contactar con Print3D Badalona' },
 ]
