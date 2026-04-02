@@ -42,6 +42,7 @@ export function PresupuestoForm() {
   })
 
   const modalidad = watch('modalidad')
+  const material = watch('material')
   const sinDetalles = watch('sinDetalles') ?? false
 
   function handleSinDetallesToggle() {
@@ -256,7 +257,12 @@ export function PresupuestoForm() {
                       {...register('material')}
                       className="sr-only"
                     />
-                    <span className="inline-block bg-[#EFF6FF] text-[#1D4ED8] border border-[#BFDBFE] text-xs font-semibold px-3 py-1.5 rounded has-[:checked]:bg-[#2563EB] has-[:checked]:text-white has-[:checked]:border-[#2563EB] transition-colors">
+                    <span className={cn(
+                      'inline-block text-xs font-semibold px-3 py-1.5 rounded border transition-colors',
+                      material === m.id
+                        ? 'bg-[#2563EB] text-white border-[#2563EB]'
+                        : 'bg-[#EFF6FF] text-[#1D4ED8] border-[#BFDBFE]'
+                    )}>
                       {m.label}
                     </span>
                   </label>
