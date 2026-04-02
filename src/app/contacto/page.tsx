@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: 'Contacto',
   description:
     'Contacta con Print3D Badalona por WhatsApp, email o visítanos en Badalona. Respondemos en menos de 24h.',
+  openGraph: {
+    title: 'Contacto — Print3D Badalona',
+    description: 'Contacta con Print3D Badalona por WhatsApp, email o visítanos en Badalona. Respondemos en menos de 24h.',
+    url: 'https://print3dbadalona.com/contacto',
+  },
 }
 
 export default function ContactoPage() {

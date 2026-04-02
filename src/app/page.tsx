@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   title: 'Print3D Badalona — Impresión 3D local en Badalona',
   description:
     'Servicio de impresión 3D en Badalona. Recoge en persona o envío a domicilio. Respuesta en 24h.',
+  openGraph: {
+    title: 'Print3D Badalona — Impresión 3D local en Badalona',
+    description: 'Servicio de impresión 3D en Badalona. Recoge en persona o envío a domicilio. Respuesta en 24h.',
+    url: 'https://print3dbadalona.com',
+  },
 }
 
 export default function Home() {

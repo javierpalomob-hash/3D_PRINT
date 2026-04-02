@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: 'Solicitar presupuesto',
   description:
     'Solicita un presupuesto para tu proyecto de impresión 3D en Badalona. Respuesta en menos de 24h.',
+  openGraph: {
+    title: 'Solicitar presupuesto — Print3D Badalona',
+    description: 'Solicita un presupuesto para tu proyecto de impresión 3D en Badalona. Respuesta en menos de 24h.',
+    url: 'https://print3dbadalona.com/presupuesto',
+  },
 }
 
 export default function PresupuestoPage() {

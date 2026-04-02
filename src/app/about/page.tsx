@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: 'Sobre nosotros',
   description:
     'Conoce Print3D Badalona. Servicio local de impresión 3D hecho por makers para makers.',
+  openGraph: {
+    title: 'Sobre nosotros — Print3D Badalona',
+    description: 'Conoce Print3D Badalona. Servicio local de impresión 3D hecho por makers para makers.',
+    url: 'https://print3dbadalona.com/about',
+  },
 }
 
 const equipos = [

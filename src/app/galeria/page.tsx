@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   title: 'Galería de trabajos',
   description:
     'Galería de piezas impresas en 3D en Badalona. Decoración, prototipos, industrial, coleccionables y más.',
+  openGraph: {
+    title: 'Galería de trabajos — Print3D Badalona',
+    description: 'Galería de piezas impresas en 3D en Badalona. Decoración, prototipos, industrial, coleccionables y más.',
+    url: 'https://print3dbadalona.com/galeria',
+  },
 }
 
 const piezas = piezasData as PiezaGaleria[]

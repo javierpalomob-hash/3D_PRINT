@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   title: 'Servicios de impresión 3D',
   description:
     'Impresión FDM bajo demanda y pedidos recurrentes. PLA, PETG, TPU, ASA. Precios orientativos y tiempos de entrega en Badalona.',
+  openGraph: {
+    title: 'Servicios de impresión 3D — Print3D Badalona',
+    description: 'Impresión FDM bajo demanda y pedidos recurrentes. PLA, PETG, TPU, ASA. Precios orientativos y tiempos de entrega en Badalona.',
+    url: 'https://print3dbadalona.com/servicios',
+  },
 }
 
 const materiales = materialesData as Material[]
